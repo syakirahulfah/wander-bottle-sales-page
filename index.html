@@ -3,82 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wander Bottle - Sales Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Wander Bottle</title>
     <style>
+        /* General Styling */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f9fc;
+            background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
+
+        /* Header Styling */
         header {
-            background-color: #14400d;
-            color: #fff;
+            background-color: #006400; /* Dark Green */
+            color: white;
             text-align: center;
             padding: 20px 0;
         }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            max-width: 800px;
+
+        /* Description Section Styling */
+        .description {
             margin: 20px auto;
             padding: 20px;
-            background: #fff;
+            max-width: 600px;
+            background-color: #f9f9f9;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .product-image {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        .product-image img {
-            max-width: 100%;
-            border-radius: 8px;
+
+        .description h2 {
+            color: #006400; /* Dark Green */
+            margin-bottom: 15px;
         }
-        .description {
-            margin: 20px 0;
+
+        .description p {
+            margin: 15px 0;
         }
-        .price {
-            font-size: 24px;
+
+        .description ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .description ul li {
+            margin: 10px 0;
             font-weight: bold;
-            color: #007bff;
         }
-        .cta {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .cta a {
-            background: #007bff;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
+
+        /* Order Button Styling */
+        .order-now {
             display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #006400; /* Dark Green */
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
         }
-        .cta a:hover {
-            background: #0056b3;
+
+        .order-now:hover {
+            background-color: #004d00; /* Darker Green */
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Wander Bottle</h1>
-        <p>Stay hydrated in style</p>
     </header>
-    <div class="container">
-        <div class="product-image">
-            <img src="images/wander bottle.png" alt="Wander Bottle">
-        </div>
-        <div class="description">
-            <p>The Wander Bottle combines innovation and elegance to give you the ultimate hydration experience. With double-wall insulation, your drinks stay hot for 12 hours or cold for 24 hours. Its leak-proof design ensures no spills, and the sleek, ergonomic style fits perfectly in your hand.</p>
-        </div>
-        <p class="price">RM93.78</p>
-        <div class="cta">
-            <a href="https://tyeso.com/products/wander-stainless-steel-sports-bottle-with-straw" target="_blank">Order Now</a>
-        </div>
-    </div>
+    <section class="description">
+        <h2>Discover the Elegance of the Wander Bottle</h2>
+        <p>
+            Stay hydrated in style with the <strong>Wander Bottle</strong>, your perfect companion for life's adventures. 
+            Designed to combine elegance and functionality, this bottle is crafted for those who value sustainability 
+            without compromising on aesthetics.
+        </p>
+        <ul>
+            <li><strong>Premium Build:</strong> Made from durable, BPA-free materials that are built to last.</li>
+            <li><strong>Thermal Insulation:</strong> Keep your drinks hot for up to 12 hours or cold for up to 24 hours.</li>
+            <li><strong>Leak-Proof Design:</strong> Travel worry-free with its secure, no-spill lid.</li>
+        </ul>
+        <p>
+            Whether you're hiking in the mountains, commuting to work, or relaxing at the beach, 
+            the Wander Bottle is more than just a bottle—it's a lifestyle upgrade. 
+        </p>
+        <a href="https:/tyeso.com/products/wander-stainless-steel-sports-bottle-with-straw" class="order-now">Order Now</a>
+    </section>
 </body>
 </html>
